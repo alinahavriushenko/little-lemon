@@ -1,13 +1,335 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h1 {
+  text-align: center;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 40px;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: auto;
+  gap: 25px;
+}
+
+nav li {
+  margin-right: auto;
+  list-style: none;
+  color: rgb(27, 27, 27);
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  background-color: #495e57;
+}
+
+.footer-txt {
+  align-items: flex-start;
+  display: flex;
+  gap: 80px;
+  color: #e0e0e0;
+}
+
+.footer-img {
+  height: 400px;
+  width: 100%;
+  align-self: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.footer-column ul {
+  padding: 0;
+}
+
+.call-to-action {
+  background-color: #495e57;
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+}
+
+.call-to-action-img {
+  height: 450px;
+  width: 100%;
+  padding-top: 60px;
+  overflow: visible;
+}
+
+button {
+  background-color: #f4ce14;
+  width: 200px;
+  height: 60px;
+  font-size: 14px;
+  border-radius: 16px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text-content h1,
+.chicago-txt h3 {
+  color: #f4ce14;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  color: white;
+  text-wrap: balance;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.text-content h2 {
+  font-size: 30px;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.chicago-txt h4 {
+  color: #495e57;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chicago-txt p {
+  width: 600px;
+}
+
+.text-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 250px;
+  width: 400px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  background-color: #495e57;
+}
+
+.testimonial-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+  width: 200px;
+  color: #e0e0e0;
+}
+
+.testimonial-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.testimonial-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 200px;
+}
+
+.image {
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.image:nth-child(2) {
+  left: 20%;
+  transform: translateY(-70%);
+}
+
+.chicago-container {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+.chicago-txt {
+  padding-left: 150px;
+}
+
+/* SPECIALS */
+
+.specials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px;
+  justify-content: center;
+}
+
+.specials-card {
+  background-color: #edefee;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specials-card-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  object-fit: cover;
+}
+
+.specials-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.specials-card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.specials-container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.specials-txt-content {
+  padding: 20px;
+}
+
+.specials-container {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.specials-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials-title span {
+  color: #f4ce14;
+  font-weight: 700;
+}
+
+.specials-delivery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BOOKING FORM */
+
+form {
+  display: grid;
+  gap: 20px;
+  max-width: 400px !important;
+  margin: 0 auto 100px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: 400;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f4ce14;
+  color: black;
+  border: none;
+  border-radius: 16px;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #495e57;
+  color: white;
+}
+
+.booking-txt {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.booking-confirmed {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
 }
